@@ -90,7 +90,7 @@ ul li .current {
 }
 
 .intro .intro-text {
-    color: #bb2205;
+    color: #FFD166;
     font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -345,7 +345,11 @@ footer {
 
 @media screen and (max-width: 600px) {
     /* Intro: kotak teks melebar penuh */
-    .intro { width: 100%; }
+    .intro { 
+        width: 100%; 
+        height: 60vh;
+        background-position: center center;
+    }
 
     /* About: konten melebar penuh */
     .about { width: 100%; }
@@ -366,7 +370,11 @@ footer {
     }
 
     /* Testimoni: kotak sedikit lebih lebar */
-    .testimonial { width: 70%; }
+    .testimonial { 
+        width: 70%;
+        background-position: center;
+        background-attachment: scroll;
+    }
 
     /* Order: lebar penuh, padding dikurangi */
     .order { width: 100%; }
@@ -395,5 +403,9 @@ footer {
     .footer { 
         flex-direction: column;
         text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 }

@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;  /* 1rem = 10px, memudahkan perhitungan */
+}
+
+body { width: 100%; }
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.3;
+}
+
+section { padding: 7rem 0; }
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+header {
+    width: 100%;
+    background-color: #eee;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;  /* logo kiri, nav kanan */
+    align-items: center;
+}
+
+.header img {
+    height: 7rem;
+    padding: .5rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+}
+
+li a, li a:visited, li a:active {
+    font-size: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    color: #16697a;  /* warna biru-tosca */
+    transition: all .3s;
+}
+
+/* Efek hover + item aktif (halaman yang sedang dibuka) */
+li a:hover,
+ul li .current {
+    color: #bb2205; /*warna merah */
+    font-size: 1.7rem;
+}
+
+/* Menu Tambahan */
+.menu-baru:hover {
+    color: #28A745 !important;
+}
+
+.intro-section {
+    background: url(./images/background10.jpg) no-repeat center;
+    background-size: cover; /* gambar mengisi penuh */
+    height: 80vh;
+}
+
+.intro {
+    width: 55%;
+    color: #fff;
+    background-color: rgba(0,0,0,.5); /* kotak gelap transparan */
+    padding: 5rem 2rem;
+    border-radius: 5px;
+}
+
+.intro .intro-text {
+    color: #bb2205;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.p-head {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.p-head span { display: block; } /* nama restoran baris baru */
+.white-text { color: #fff; margin-bottom: 2.5rem;}
+
+/* Tombol dengan border putih, background transparan */
+.btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .8rem 1.6rem;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.btn:hover { background-color: #bb2205;}
+
+.about-section { background-color: #eee; }
+
+.about {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* susun elemen secara vertikal */
+    align-items: center; /* pusatkan secara horizontal */
+}
+
+.about img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; /* foto jadi bulat (lingkaran) */
+    margin-bottom: 1rem;
+}
+
+.s-head {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.menu-section { background-color: #fff; }
+
+.menu-heading { 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* semua kartu sama tinggi */
+}
+
+.menu-item {
+    width: 30%;
+    margin: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden; /* foto tidak melebihi border-radius */
+}
+
+.menu-termahal {
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-termahal:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.menu-item-text {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.t-head {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.menu-item-text p { 
+    font-size: 1.3rem; 
+    line-height: 1.6;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: #ffd700;
+    color: #000;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.testimonial-section {
+    background: url(./images/rumahmakan3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; /* Efek Parallax */
+}
+
+/* Kelas helper untuk centering di container */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    width: 60%;
+    text-align: center;
+    padding: 5rem .5rem;
+    background-color: rgba(255, 255, 255, .5);  /* putih transparan */
+    border-radius: 5px;
+}
+
+.testimonial img {
+    width: 20%;
+    border-radius: 50%;  /* foto jadi lingkaran */
+}
+
+.q-head {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+
+.order-section { background-color: #eee; }
+
+.order {
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.order-box {
+    display: flex;
+    justify-content: space-between; /* item kiri, harga kanan */
+    align-items: center;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.order-item {
+    width: 70%;
+    display: flex;  /* foto dan teks berjajar */
+    align-items: center;
+}
+
+.order-item img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%; /* foto bulat */
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.order-price p {
+    font-weight: 500;
+    padding-bottom: 2rem; /* jarak antara harga dan tombol */
+}
+
+/* Tombol solid merah (override dari .btn) */
+.btn-solid {
+    background-color: #bb2205;
+    padding: .8rem 1rem;
+}
+
+footer {
+    background-color: #2d6187; /* biru gelap */
+    padding: 1rem 0;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Link footer berwarna putih */
+.footer-link ul li a { color: #fff; }
+
+.footer p { margin: 1rem 0; }
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-media a i {
+    margin-right: .5rem;
+    font-size: 1.8rem;
+}
+
+.social-media a:hover {
+    color: #FFD166;
+}
+
+@media screen and (max-width: 600px) {
+    /* Intro: kotak teks melebar penuh */
+    .intro { width: 100%; }
+
+    /* About: konten melebar penuh */
+    .about { width: 100%; }
+
+    /* Menu: kartu susun vertikal, tidak lagi berjajar */
+    .menu-items { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .menu-item img {
+        height: 200px;
+    }
+
+    /* Testimoni: kotak sedikit lebih lebar */
+    .testimonial { width: 70%; }
+
+    /* Order: lebar penuh, padding dikurangi */
+    .order { width: 100%; }
+    .order-box { 
+        padding: .5rem; 
+        flex-direction: column;
+        text-align: center;
+    }
+    .order-item {
+        width: 100%;
+        flex-direction: column;
+    }
+    .order-item img {
+        width: 8rem; /* foto sedikit lebih kecil */
+        height: 8rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .order-price {
+        margin-top: 1rem;
+    }
+    .order-item p { font-size: 1.2rem; }
+
+    /* Footer: navigasi & copyright susun vertikal */
+    .footer { 
+        flex-direction: column;
+        text-align: center;
+    }
+}

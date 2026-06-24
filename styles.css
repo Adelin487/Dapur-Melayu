@@ -457,7 +457,7 @@ footer {
 /* Smartphone */
 @media screen and (max-width: 600px) {
     .reservasi-section {
-        padding: 4rem 1.5rem;
+        padding: 0 2rem;
     }
 
     .menu-heading p {
@@ -497,10 +497,10 @@ footer {
 
 .reservasi-form {
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
     background-color: white;
     padding: 3rem;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .reservasi-form form {
@@ -509,18 +509,19 @@ footer {
 }
 
 .reservasi-form label {
-    font-size: 1.6rem;
-    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+    color: #333;
 }
 
 .reservasi-form input,
 .reservasi-form select,
 .reservasi-form textarea {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 1.2rem;
 
-    padding: 1rem;
-
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 
     border-radius: 5px;
 
@@ -528,9 +529,8 @@ footer {
 }
 
 .reservasi-form textarea {
-
     height: 120px;
-
+    resize: none;
 }
 
 .btn-back {
@@ -538,6 +538,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-align: center;
     margin-top: 1.5rem;
     padding: .8rem 1.6rem;
     font-size: 1.6rem;

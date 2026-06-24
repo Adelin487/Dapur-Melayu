@@ -447,6 +447,46 @@ footer {
     }
 }
 
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .reservasi-form {
+        width: 80%;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 600px) {
+    .reservasi-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .menu-heading p {
+        font-size: 1.4rem;
+    }
+
+    .s-head {
+        font-size: 2rem;
+    }
+
+    .reservasi-form {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .reservasi-form input,
+    .reservasi-form select,
+    .reservasi-form textarea {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .reservasi-form button,
+    .btn-back {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .reservasi-section {
 
     min-height: 100vh;

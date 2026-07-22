@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <!-- <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Login Interface</h1>
+                <input type="radio" id="signIn" name="tab" checked>
+                <input type="radio" id="signUp" name="tab">
+                <input type="radio" id="reset" name="tab">
+
+                <nav>
+                    <label for="signIn" class="signIn">
+                        <i class="fas fa-sign-in-alt"></i>Sign In
+                    </label>
+
+                    <label for="signUp" class="signUp">
+                        <i class="fas fa-user-circle"></i>Sign Up
+                    </label>
+
+                    <label for="reset" class="reset">
+                        <i class="fas fa-share-square"></i>Reset
+                    </label>
+                    <div class="slide"></div>
+                </nav>
+
+                <section>
+                    <div class="content content-signIn">
+                        <i class="fas fa-user-tie"></i>
+                        <h2>Sign In</h2>
+                        <form action="">
+                            <label for="user">
+                                <i class=" fas fa-user"></i>
+                                <input type="text" id="user" placeholder="Nama Pengguna" autocomplete="off" required>
+                            </label>
+                            <label for="pass">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Masukkan kata sandi anda" minlength="6" required>
+                            </label>
+                            <label for="confirm-pass">
+                                <i class="fas fa-lock"></i>
+                                <input type="password"
+                                       id="confirm-pass"
+                                       placeholder="Konfirmasi Password"
+                                       required>
+                            </label>
+                            <div class="logged">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox">Tetap Masuk</label>
+                            </div>
+                            <button class="btn">Sign In</button>
+                        </form>
+                    </div>
+
+                    <div class="content content-signUp">
+                        <i class="fas fa-users"></i>
+                        <h2>Sign Up</h2>
+                        <form action="">
+                            <label for="reg-user">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="reg-user" placeholder="Nama Pengguna" autocomplete="off" required>
+                            </label>
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="Masukkan email Anda" autocomplete="off" required>
+                            </label>
+                            <label for="pass">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Masukkan kata sandi Anda" minlength="6" required>
+                            </label>
+                            <label for="confirm-pass">
+                                <i class="fas fa-lock"></i>
+                                <input type="password"
+                                       id="confirm-pass"
+                                       placeholder="Konfirmasi Password"
+                                       required>
+                            </label>
+
+                            <button class="btn">Sign Up</button>
+                        </form>
+                    </div>
+
+                    <div class="content content-reset">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h2>Reset</h2>
+                        <form action="">
+
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="Masukkan ulang email Anda" autocomplete="off" required>
+                            </label>
+
+                            <p>Kami akan mengirimkan tautan reset ke email</p>
+                            <button class="btn">Buat Ulang Kata Sandi</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </body>
+</html>
